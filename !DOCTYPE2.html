@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نامه عاشقانه</title>
+    <style>
+        @font-face {
+            font-family: 'IranNastaliq';
+            src: url('IranNastaliq.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffe4e1;
+            font-family: 'Vazir', sans-serif;
+            direction: rtl;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 150px;
+            background: url('cute-simple-doodle-love-letter-envelope-with-red-heart-stamp-vector.jpg') no-repeat center/contain;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .letter {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-family: "IranNastaliq", serif;
+            font-size: 28px;
+            line-height: 2;
+            margin: 20px 0;
+            text-align: justify;
+            display: none;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ff3b2f;
+        }
+
+        .tarafdari_embed_frame {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .tarafdari_embed_frame iframe {
+            width: 100%;
+            height: 80px;
+            border: none;
+        }
+
+        #musicFrame {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="openEnvelope()"></div>
+
+    <div id="firstLetter" class="letter">
+        سلام عزیزم<br>
+        هر مناسبت توی زندگیمون بهونه‌ای که بتونیم بهتر و خوب‌تر به یاد هم باشیم. یادمون بیاد که دقیقاً یک سال قبل همچین موقعیت آرزو کردیم یک سال آینده رو کنار هم باشیم و دقیقاً این همون یک سال که رقم خورده. یک چیز تو زندگی خیلی بهم حس شادی و نرمی داره، اونم تصور شاد کردن تو. خب به هر دلیلی امشب فیزیکی کنار هم نیستیم ولی خب تصمیم گرفتم یه ایده خوبی بسازم و اجراش کنم.<br>
+        قبل از اینکه اصل نامه منو بخونی ازت می‌خوام دکمه پلی بزنی تا موزیک واست پلی بشه و وقتی داری گوش میدی نامه منو تو صفحه بعدی بخونی.
+        <button class="button" onclick="showMusic()">پخش موزیک</button>
+        <a class="button" href="#" onclick="showNextPage()">دیدن نامه اصلیم</a>
+    </div>
+
+    <div id="musicFrame" class="tarafdari_embed_frame"> 
+        <iframe src="https://www.tarafdari.com/sites/all/modules/static/external/embed.php?nid=2529127" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+    </div>
+
+    <div id="nextPage" class="letter" style="display: none;">
+       امیدوارم الان دلت واسم ذوق کرده باشه عزیزم 😊  
+ببخشید شاید خیلی حرفه‌ای نباشه. خیلی از کدهای HTML و CSS سر در نمیارم، ولی سعی کردم ایده‌ای که تو ذهنم بود رو قدم به قدم اجرا کنم. امیدوارم الان لبت واسم بخنده و کلی خوشحال بشی 😍😁  
+
+اما خب، اول از هرچیزی، دلم می‌خواد از پیشونیت 💋 کنم و بگم: عزیز دلم، ناز نازی من، مرسی که یک سال کنار من بودی. هر روز که می‌گذره، انگار یک سال تازه از نو برای من شروع می‌کنی.  
+این مدت خیلی بهت سخت گذشت، خیلی اذیت شدی، خیلی ناراحت شدی. می‌دونم شاید اون‌طور که فکر می‌کردی، نتونستم اوضاع رو واست جمع کنم. ولی ازت زمان خواستم و قول دادم که کوچیک کوچیک (اینجا زنگ زدی بهم... ) جبران کنم. مطمئن باش این کارای کوچیک، کم‌کم به کارای بزرگ‌تر تبدیل می‌شن تا بدونی چقدر واست ارزش قائلم، زهرای عزیزم   
+
+خیلی به گذشته اشاره نمی‌کنم. چون خب، آهنگی که داری گوش می‌دی، دقیقاً داره به همین موضوع اشاره می‌کنه که لحظه‌های حال ما چقدر ارزشمند و مهمه!  
+دلم خواست ازت تشکر کنم که یک سال کنارم بودی، با کم و کاستی‌هام ساختی، و کمکم کردی رشد کنم و مردی بشم که تو دوست داری. تو مهم‌ترین بخش زندگی منی، خواسته‌هات و حس تو برای من اولویت دارن. به همین خاطر با عشق و علاقه، دارم سمت مردی که تو همیشه دوست داری حرکت می‌کنم، فقط برای اینکه همیشه لبت بخنده 😊  
+
+حالا که داریم به سال جدید نزدیک می‌شیم، شاید هدف‌گذاری دقیق برام معنای خاصی نداشته باشه. ولی می‌دونم که سال پیش‌رو، برای هردومون سال مهمیه:  
+تموم شدن دانشگاه تو، تموم شدن دانشگاه من، تصمیمات مهم مثل کنکور، کار، و هزار تا چیز دیگه. امیدوارم تو این مسیر بتونم بهترین رفیق، پشتوانه، و یار تو باشم.  
+
+برات آرزوهای قشنگی دارم:  
+برات آرزوی سلامتی می‌کنم.  
+برات آرزوی شادی می‌کنم.  
+برات آرزوی موفقیت می‌کنم.  
+برات آرزوی زیبایی و آرامش می‌کنم.  
+
+عشق باارزش من، عاشقانه دوستت دارم، زهرای زیبای من ❤️💋  
+Happy Christmas
+ <br>
+        
+    </div>
+
+    <script>
+        function openEnvelope() {
+            document.querySelector('.envelope').style.display = 'none';
+            document.getElementById('firstLetter').style.display = 'block';
+        }
+
+        function showMusic() {
+            document.getElementById('musicFrame').style.display = 'block';
+        }
+
+        function showNextPage() {
+            document.getElementById('firstLetter').style.display = 'none';
+            document.getElementById('nextPage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
